@@ -2,9 +2,7 @@
         path = _theme_packages/hooligan
         url = https://github.com/dhulihan/hooligan.git
         branch = master
-
 [submodule "mark-reid"]
         path = _theme_packages/mark-reid
 	url = https://github.com/netlexer/theme-mark-reid.git
         branch = master
-

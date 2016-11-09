@@ -56,7 +56,7 @@ h2 {
 }
 
 hr { 
-	border-top: 1px solid silver;
+	border-top: 1px solid #909090;
 	border-bottom: none;
 	padding: 0;
 	margin: 1.46em 0 0 0;
@@ -90,7 +90,7 @@ sup { line-height: 1ex; }
 #page { counter-reset: section; }
 #page h2:before {
 	margin-left: -3.5ex;
-	color: silver;
+	color: #909090;
 	content: "§" counter(section) ". ";
 	counter-increment: section 2;
 }
@@ -114,7 +114,7 @@ sup { line-height: 1ex; }
 .right { float: right; clear: left; }
 .left { float: left; clear: right; }
 .inset { 
-	border: 1px solid silver; 
+	border: 1px solid #909090; 
 	padding: 2px;
 	margin: 0em 0.8em 0.8em 0.8em;
 }
@@ -136,8 +136,8 @@ blockquote {
 .note {
 	padding-top: 0.5em; 
 	background-color: #fafaff;
-	border-top: 1px solid silver;
-	border-bottom: 1px solid silver;
+	border-top: 1px solid #909090;
+	border-bottom: 1px solid #909090;
 }
 /* @group Table */
 table.neat {
@@ -194,11 +194,11 @@ ul.compact li a {
 /* @end */
 
 /* @group Header */
-#header, #header a { color: silver; }
+#header, #header a { color: #909090; }
 #header .hover { color: transparent; }
 #header:hover a { color: black; text-shadow: #aaa 2px 2px 3px;}
 #header:hover a:hover { text-decoration: none; }
-#header a:hover .hover { color: silver; }
+#header a:hover .hover { color: #909090; }
 #header {
 	position: relative;
 	font-variant: small-caps;
@@ -235,11 +235,11 @@ ul.compact li a {
 	border-bottom: 2px solid blue;
 }
 #header .byline {
-	color: silver;
+	color: #909090;
 	font-size: 10pt;
 	line-height: 75%
 }
-#header:hover .byline a { color: silver; text-shadow: none; }
+#header:hover .byline a { color: #909090; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
 
 /* @group Twitter */
@@ -257,7 +257,7 @@ body#Code #header a.code,
 body#Past #header a.past,
 body#Kith #header a.kith
 { 
-	border-bottom: 2px solid silver; 
+	border-bottom: 2px solid #909090; 
 }
 
 /* @end */
@@ -301,7 +301,7 @@ body#Kith #header a.kith
 .list .title { font-weight: bold; }
 p.line { position: relative; margin: 0; }
 p.excerpt { margin: 0; }
-.comments { font-size: smaller; position: absolute; color: silver; right: 0; top: 0; }
+.comments { font-size: smaller; position: absolute; color: #909090; right: 0; top: 0; }
 .excerpt { color: black; }
 
 /* @group Signature */
@@ -386,8 +386,8 @@ pre > code {
 }
 .dsq-comment-header {
 	background-color: whitesmoke !important;
-	border-top: 1px solid silver !important;
-	border-bottom: 1px solid silver !important;
+	border-top: 1px solid #909090 !important;
+	border-bottom: 1px solid #909090 !important;
 	margin-bottom: 1.15em !important;
 }
 .dsq-header-time { margin-left: 0 !important; }
@@ -401,8 +401,8 @@ pre > code {
 }
 #dsq-options {
 	background: whitesmoke;
-	border-bottom: 1px solid silver;
-	border-top: 1px solid silver;
+	border-bottom: 1px solid #909090;
+	border-top: 1px solid #909090;
 	padding: 0 0 0 1em;
 }
 #dsq-comments-count {
@@ -411,7 +411,7 @@ pre > code {
 }
 #dsq-extra-links { padding-left: 0 !important; }
 #dsq-extra-links li img { display: none; }
-#dsq-options-toggle { color: silver; font-size: 75% !important;}
+#dsq-options-toggle { color: #909090; font-size: 75% !important;}
 #dsq-add-new-comment {
 	margin-top: 1.19em !important;
 	margin-bottom: 1.25em !important;
