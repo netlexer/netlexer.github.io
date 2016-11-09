@@ -5,6 +5,6 @@
 
 [submodule "mark-reid"]
         path = _theme_packages/mark-reid
-	url = https://github.com/jekyllbootstrap/theme-mark-reid.git
+	url = https://github.com/netlexer/theme-mark-reid.git
         branch = master
 
