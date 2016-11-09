@@ -1,46 +1,38 @@
 ---
 layout: page
-title: Hello World!
+title: Hello Emacs World!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## Easy Menu Navigation of init.el
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+Here is a useful way to navigate your `init.el` by means of a simple
+menu. My emacs init is nearly 1000 lines, split into convenient
+sections by easily parsed section headers, like this
 
-## Update Author Attributes
-
-In `_config.yml` remember to specify your own data:
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;; Startup routines
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
+The following elisp snippet uses a regular expression wrapped inside an
+emacs-lisp-mode-hook to create a simple menu from all such headers
 
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
+    ;; Create a menu from matched section headers in this file. Bound to C-f6.
+    ;; Alternatively, M-S-down-mouse-3 invokes a mouse menu. 
+    (add-hook 'emacs-lisp-mode-hook
+    (lambda ()
+            (when (string= (buffer-name) "init.el")
+              (setq imenu-generic-expression
+                    '((nil "^;\\{70,\\}\n;;; \\(.+\\)" 1))))))
 
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
+    (global-set-key [(control f6)] 'imenu)
 
-    $ rm -rf _posts/core-samples
+The regular expression recognizes a sequence of 70 or more `;`
+characters, a newline, another three comment characters, a space
+followed by a descriptive section header, which gets added to the
+menu. 
 
-Here's a sample "posts list".
-
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-## To-Do
-
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
-
+Read [My Emacs init.el](https://github.com/netlexer/dot.emacs.d/) for
+further ideas. 
 
