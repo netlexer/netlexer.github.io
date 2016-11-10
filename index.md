@@ -32,8 +32,8 @@ emacs-lisp-mode-hook to create a simple menu from all such headers
 (global-set-key [(control f6)] 'imenu)
 ```
 
-The regular expression recognizes a sequence of 70 or more `;`
-characters, a newline, another three comment characters, a space
+The regular expression matches a sequence of 70 or more `;`
+characters, a newline, another three comment characters, and a space
 followed by a descriptive section header, which gets added to the
 menu. 
 
