@@ -37,8 +37,6 @@ characters, a newline, another three comment characters, and a space
 followed by a descriptive section header, which gets added to the
 menu. 
 
-![Imenu showing sections in init.el](screenshot1.png)
-
 Read [My Emacs init.el](https://github.com/netlexer/dot.emacs.d/) for
 further ideas. 
 
